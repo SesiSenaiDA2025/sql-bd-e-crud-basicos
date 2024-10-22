@@ -30,6 +30,7 @@ CREATE TABLE filmes (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(45) NOT NULL,
     lancamento YEAR NOT NULL,
+    genero_id INT NOT NULL
 )
 
 ``` 
