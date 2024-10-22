@@ -65,5 +65,28 @@ UPDATE filmes SET titulo = 'Vingadores: Endgame' WHERE id = 1;
 UPDATE filmes SET lancamento = 1998 WHERE titulo = 'titanic';
 
 ```
+<!-- _____________________________________________ -->
+
+## Delete
+### Excluir (Obs: Sempre usar Where)
+
+```sql
+
+-- Exclui filmes com lançamento antes do ano 2000
+DELETE FROM filmes WHERE lancamento < 2000;
+
+```
+
+<!-- _____________________________________________ -->
+
+## Consulta em 2 tabelas diferentes (Junção)
+
+```sql
+
+-- Filmes com seus generos
+SELECT filmes.titulo, generos.genero FROM filmes
+INNER JOIN generos ON filmes.genero_id = generos.id;
+
+```
 
 
