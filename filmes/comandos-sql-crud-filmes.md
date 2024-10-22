@@ -52,4 +52,18 @@ SELECT titulo, lancamento FROM filmes ORDER BY lancamento DESC;
 
 ```
 
+<!-- _____________________________________________ -->
+
+## Update
+### Atualizar (Obs: Sempre usar Where)
+
+```sql
+-- Atualizar o título do filme de id = 1
+UPDATE filmes SET titulo = 'Vingadores: Endgame' WHERE id = 1;
+
+-- Atualizar o ano de lançamento do filme titanic para 1998
+UPDATE filmes SET lancamento = 1998 WHERE titulo = 'titanic';
+
+```
+
 
